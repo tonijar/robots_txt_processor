@@ -1,0 +1,13 @@
+User-agent: googlebot        # all Google services
+Disallow: /private/          # disallow this directory
+Allow: /public/              # allow this directory
+
+User-agent: googlebot-news   # only the news service
+Disallow: /                  # disallow everything
+
+User-agent: *                # any robot
+Disallow: /something/        # disallow this directory
+Allow: /other/               # allow this directory
+
+Sitemap: http://example.com/sitemap.xml
+Sitemap: http://example.com/sitemap2.xml

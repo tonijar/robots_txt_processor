@@ -1,0 +1,16 @@
+DiSallow : /private/          # disallow this directory
+ AlloW : /public/              # allow this directory
+Allow : /public2/              # allow this directory too
+    user-Agent : googlebot        # all Google services
+
+ Disallow : /                  # disallow everything
+  User-AGENT: googlebot-news   # only the news service
+
+ AlLow: /other/               # allow this directory
+ Allow : /public2/              # allow this directory too
+  DisAllow: /something/        # disallow this directory
+Disallow : /something-more/        # disallow something more
+  User-agent: *                # any robot
+
+  SiteMap  : http://example.com/sitemap.xml
+sitEmap: http://example.com/sitemap2.xml
